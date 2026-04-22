@@ -2,7 +2,7 @@ exe=0
 bom=0
 rui=0
 
-for cliente in range(1, 6):
+for cliente in range(1, 51):
     nome=input("Digite seu nome:\n")
     idade=int(input("Digite sua idade:\n"))
     opiniao=int(input("Qual foi seu grau de satisfação com o atendimento?(digite o número)\n1.EXCELENTE\n2.BOM\n3.RUIM\n"))
