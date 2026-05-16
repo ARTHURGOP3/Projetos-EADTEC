@@ -1,0 +1,91 @@
+/* Classe principal que organiza as seções da página */
+.principal{
+    width: 100%; /* Ocupa toda a largura disponível */
+
+    display:flex; /* Ativa o Flexbox */
+    flex-direction: row; /* Organiza os elementos em linha */
+}
+
+/* Cor de fundo do site */
+body{
+    background-color: grey;
+}
+
+/* Estilo aplicado nas três seções */
+.filmes, .games, .musica{
+    align-items:center; /* Alinha itens ao centro */
+    margin: 2%; /* Espaçamento externo */
+    background-color: gainsboro;
+}
+
+/* Filme ocupa espaço proporcional */
+.filmes{
+    flex-grow: 1;
+}
+
+/* Games ocupa espaço proporcional */
+.games{
+    flex-grow: 1;
+}
+
+/* Música ocupa espaço proporcional */
+.musica{
+    flex: 1;
+}
+
+/* Configurações das imagens */
+img{
+    width:auto; /* Mantém largura automática */
+    height:auto; /* Mantém altura automática */
+
+    object-fit:cover; /* Ajusta imagem sem distorcer */
+
+    display:block; /* Faz a imagem ocupar linha própria */
+    margin:10px auto; /* Centraliza imagem */
+
+
+}
+
+/* Centraliza todos os h1 */
+h1{
+    text-align: center;
+}
+
+/* Cor padrão dos links não visitados */
+a:link{
+    color:darkblue;
+}
+
+/* Cor quando o mouse passa por cima */
+a:hover{
+    color: blue;
+}
+
+/* Cor de links já visitados */
+a:visited{
+    color: grey;
+}
+
+/* Centraliza parágrafos */
+p{
+    text-align: center;
+}
+
+/* Configuração geral dos links */
+a{
+    display:block; /* Faz o link ocupar linha inteira */
+    margin:10px auto; /* Centraliza */
+    text-align:center; /* Centraliza texto */
+}
+
+/* Estilo final do h1 */
+h1{
+    text-align: center;
+    color: red; /* Cor tomate */
+    font-size: x-large; /* Tamanho grande */
+}
+
+/* Tamanho da fonte dos parágrafos */
+p{
+    font-size: medium;
+}
