@@ -5,11 +5,11 @@ Música e Podcasts
 Games e Tecnologia
 Cada seção deverá conter:
 
-Um título (<h1> ou <h2>);
+Um título (h1 ou h2);
 
-Duas a três imagens ilustrativas (usando <img>);
+Duas a três imagens ilustrativas (usando img);
 
-Pequenos textos explicativos (<p>).
+Pequenos textos explicativos (p).
 
 Requisitos Técnicos
 
@@ -17,7 +17,7 @@ Utilize três tipos de CSS:
 
 Inline (em pelo menos um elemento).
 
-Interno (entre as tags <style> dentro de <head>).
+Interno (entre as tags style dentro de head).
 
 Externo (arquivo .css linkado ao HTML).
 
