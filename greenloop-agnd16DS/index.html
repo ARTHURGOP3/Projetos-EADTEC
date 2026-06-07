@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Greenloop</title>
+    <style>
+        #main {
+            margin-left: 120px
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        /* Definimos que a sidebar terá uma largura de 120px e cor a cord de fundo #222 */
+
+        .w3-sidebar {
+            width: 120px;
+            background: #1B4332;
+        }
+
+        /*Define Fonte para todas as tags listadas abaixo*/
+
+        body,h1,h2,h3,h4,h5,h6 {
+            font-family: "Montserrat", sans-serif
+            
+        }
+
+
+        h1,h2,h3,h4,h5,h6,p,a{
+            color:white
+        }
+
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+        b {
+            font-size: large;
+            color:black;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #40916C;">
+    <!--SideBar-->
+    <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
+        <!-- HOME -->
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hover-text-green w3-text-white">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <!-- Sobre -->
+        <a href="#sobre" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hover-text-green w3-text-white">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>SOBRE NÓS</p>
+        </a>
+        <!-- Parceiros -->
+        <a href="#parceiros" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hover-text-green w3-text-white">
+            <i class="fa fa-handshake-o w3-xxlarge"></i>
+            <p>Parceiros</p>
+        </a>
+
+        <!--FAQ-->
+        <a href="#FAQ" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hover-text-green w3-text-white">
+            <i class=" fa fa-question w3-xxlarge"></i>
+            <p>FAQ</p>
+        </a>
+        <!-- Contato -->
+        <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hover-text-green w3-text-white">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTATO</p>
+        </a>
+    </nav>
+    <!--SideBar-->
+
+    <!--NavBar-->
+    <div class="w3-top w3-hide-large w3-hide-medium" >
+        <nav class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#home" class="w3-bar-item w3-button" style="width:25% ">HOME</a>
+            <a href="#parceiros" class="w3-bar-item w3-button" style="width:27% ">PARCEIROS</a>
+            <a href="#FAQ" class="w3-bar-item w3-button" style="width:25% ">FAQ</a>
+            <a href="#contato" class="w3-bar-item w3-button" style="width:23% ">CONTATO</a>
+        </nav>
+    </div>
+    <!--NavBar-->
+
+    <!--Conteúdo da Página -->
+    <div class="w3-padding-large" id="main">
+        <!--Home -->
+        <header class="w3-container w3-padding-32 w3-center " id="home">
+            <h1>
+                <img src="IMG/greenloop.png" alt="Logo GreenLoop" class="w3-image" width="68%">
+            </h1>
+            <h3 class="w3-opacity"><i class="w3-text-black">"Seu lixo eletrônico com destino certo."</i></h3>
+            <br>
+            <button style="color: green; width: 40%;">Agendar uma coleta</button> 
+            <button style="color: green; width: 40%">Encontrar ponto de descarte</button>
+        </header>
+        <!--Home -->
+
+        <!-- Sobre -->
+        <div class="w3-content  w3-padding-64" id="sobre">
+            <h1 style="text-align: center;">Quem somos</h1>
+            <p style="font-size: medium;"> <b style="color: green; font-size: 20px;">Greenloop</b> é a ponte entre você e o descarte responsável de eletrônicos. 
+            Facilitamos o fluxo de reciclagem de smartphones, computadores e componentes, garantindo que materiais 
+            valiosos retornem ao ciclo produtivo e não poluam o planeta.</p>
+            <br>
+            <h2>Como funciona</h2>
+            <p>1.Cadastre: Diga qual equipamento deseja descartar.<br>
+            2.Escolha: Agende uma coleta em domicílio ou encontre o ponto de entrega mais próximo.<br>
+            3.Ganhe: Receba GreenPoints que valem descontos em lojas parceiras de tecnologia.</p>
+            <br>
+              <div class="w3-center">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-green w3-xlarge w3-padding-32">Impactômetro</li>
+                        <li class="w3-padding-16">+50 toneladas de e-waste recicladas.</li>
+                        <li class="w3-padding-16">+12.000 usuários ativos.</li>
+                        <li class="w3-padding-16">0% de lixo eletrônico enviado a aterros pelas nossas cooperativas parceiras.</li>
+                    </ul>
+                </div>
+            
+
+        </div>
+        <!-- Sobre -->
+
+
+        <!-- PARCEIROS-->
+        <div class=" w3-content w3-padding-64" id="parceiros">
+            <h2 style="color: darkgreen;">Parceiros</h2>
+            <hr class="w3-center" style="width:200px" class="w3-opacity">
+            <h1 class="w3-center">
+                <img src="IMG/microsoft.png"><br>
+                <i>"Conectando tecnologia, protegendo o futuro."</i>
+                <br>
+                <br>
+                <img src="IMG/intel.png"><br>
+                <i>"Processando inovação, preservando o amanhã"</i>
+            </h1>
+            
+        </div>
+
+
+        <!-- FAQ -->
+        <div class="w3-padding-64 w3-content w3-" id="FAQ">
+            <h2 style="color: darkgreen;">FAQ</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <h1>Quais tipos de equipamentos eletrônicos vocês aceitam?</h1>
+            <br>
+            <p style="color: lightgreen;">Resposta: Aceitamos celulares, tablets, computadores, cabos, carregadores, pilhas, baterias, televisores e eletrodomésticos de pequeno porte. Não aceitamos lâmpadas ou materiais hospitalares.</p>
+            <br>
+            <h1>Como vocês garantem a segurança dos meus dados pessoais nos aparelhos descartados?</h1>
+            <br>
+            <p style="color: lightgreen;">Todos os dispositivos de armazenamento (HDs, SSDs, memórias) passam por um processo rigoroso de destruição física ou formatação militar antes da reciclagem. No entanto, recomendamos que você faça o backup e a restauração de fábrica antes da entrega.</p>
+            <br>
+            <h1>O serviço de descarte ou coleta tem algum custo?</h1>
+            <br>
+            <p style="color: lightgreen;">Não! Para pessoas físicas, o descarte em pontos de entrega e a coleta agendada são 100% gratuitos. Para empresas que demandam descarte em grande volume, oferecemos planos corporativos com emissão de laudo ambiental.</p>
+        </div>
+
+       
+        <!-- Contato -->
+        <div class="w3-padding-128 w3-content w3-text-grey" id="contato">
+            <h2 style="color: darkgreen;">Entre em contato conosco</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <div class="w3-section">
+                <p>
+                    <i class="fa fa-map-marker fa-fw w3-text-green w3-xxlarge w3-margin-right"></i> Vila Prudente,São Paulo,Brasil</p>
+                <p>
+                    <i class="fa fa-phone fa-fw w3-text-green w3-xxlarge w3-margin-right"></i> Telefone: 11 128909867</p>
+                <p>
+                    <i class="fa fa-envelope fa-fw w3-text-green w3-xxlarge w3-margin-right"> </i> Email: greenloop@greenloop.com.br</p>
+                <p>
+                    <i class=" fa fa-instagram w3-text-green w3-xxlarge w3-margin-right"></i>Instagram:
+                    <a class="w3-hover-text-green" href="https://www.instagram.com/">@green_loop</a>
+                </p>
+            </div>
+            <br>
+            <b style="font-size: large;">ESTAMOS CONTRATANDO!</b>
+            <br>
+            <p>Mande seu curriculo:</p>
+
+            <form>
+                <p>
+                    <input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required name="Assunto">
+                </p>
+                <p>
+                    <p>Anexe seus curriculo abaixo</p>
+                    <input type="file" class="w3-input w3-padding-16" name="arquivos">
+                </p>
+                <br>
+                <br>
+                <p>
+                    <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                        <i class="fa fa-paper-plane"></i> Enviar mensagem
+                    </button>
+                </p>
+            </form>
+            <br>
+        </div>
+        <!-- Contato -->
+
+    </div>
+</body>
+
+</html>
