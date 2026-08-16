@@ -8,7 +8,29 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Greenloop</title>
-    <style>
+    <script>
+       // CORREÇÃO: Garante que o script rode APENAS quando o HTML terminar de carregar
+        window.onload = function() {
+            showDivs(slideIndex);
+        };
+       var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+         }
+     x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+
+   <style>
         #main {
             margin-left: 120px
         }
@@ -73,13 +95,17 @@
             <i class=" fa fa-question w3-xxlarge"></i>
             <p>FAQ</p>
         </a>
+        <!--Serviços -->
+        <a href="#servicos" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hover-text-green w3-text-white">
+            <i class=" fa fa-recycle w3-xxlarge"></i>
+            <p>Serviços</p>
+        </a>
         <!-- Contato -->
         <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hover-text-green w3-text-white">
             <i class="fa fa-envelope w3-xxlarge"></i>
-            <p>CONTATO</p>
+            <p>Contato</p>
         </a>
     </nav>
-    <!--SideBar-->
 
     <!--NavBar-->
     <div class="w3-top w3-hide-large w3-hide-medium" >
@@ -87,10 +113,10 @@
             <a href="#home" class="w3-bar-item w3-button" style="width:25% ">HOME</a>
             <a href="#parceiros" class="w3-bar-item w3-button" style="width:27% ">PARCEIROS</a>
             <a href="#FAQ" class="w3-bar-item w3-button" style="width:25% ">FAQ</a>
+            <a href="#servicos"class="w3-bar-item w3-button" style="width:25% " >SERVIÇOS</a>
             <a href="#contato" class="w3-bar-item w3-button" style="width:23% ">CONTATO</a>
         </nav>
     </div>
-    <!--NavBar-->
 
     <!--Conteúdo da Página -->
     <div class="w3-padding-large" id="main">
@@ -129,7 +155,7 @@
             
 
         </div>
-        <!-- Sobre -->
+
 
 
         <!-- PARCEIROS-->
@@ -165,8 +191,35 @@
             <p style="color: lightgreen;">Não! Para pessoas físicas, o descarte em pontos de entrega e a coleta agendada são 100% gratuitos. Para empresas que demandam descarte em grande volume, oferecemos planos corporativos com emissão de laudo ambiental.</p>
         </div>
 
-       
+        <!--Serviços-->
+        <div class="w3-padding-64 w3-content" id="servicos"></div>
+           <div class="w3-center"> 
+                <h1>
+                <img src="IMG/greenloop.png" alt="Logo GreenLoop" class="w3-image" width="50%">
+                </h1>
+                <h2 class="w3-opacity"><i class="w3-text-black">"Seu lixo eletrônico com destino certo."</i></h2>
+                <br>
+                <br>
+                
+            </div>
+            <div class="w3-content w3-display-container w3-center" >
+
+                <img class="slides" src="IMG/servico1.png" style="width:100%">
+                <img class="slides" src="IMG/servico2.png" style="width:100%">
+                <img class="slides" src="IMG/servico3.png" style="width:100%">
+                
+                
+  
+                <button class="w3-button w3-display-left w3-hover-green" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-hover-green" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>    
+
+
         <!-- Contato -->
+        <br>
+        <br>
+        <br>
         <div class="w3-padding-128 w3-content w3-text-grey" id="contato">
             <h2 style="color: darkgreen;">Entre em contato conosco</h2>
             <hr style="width:200px" class="w3-opacity">

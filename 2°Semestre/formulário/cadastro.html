@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        header{
+            background-color: blanchedalmond;
+        }
+        form{
+            background-color: bisque;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <Header class="w3-header">
+        <h1 style="text-align: center;">Formulário para Candidatos</h1>
+        <h2 style="text-align: center;">Vaga de emprego para Desenvolvedor</h2>
+
+    </Header>
+    <div class="form">
+        <form action="processaCadastro.php" method="POST" class="w3-container w3-card">
+            <h3>Nome
+                <input type="text" name="nome" placeholder="Digite seu Nome" class="w3-input">
+            </h3>
+            <h3>Idade
+                <input type="number" name="idade" placeholder="Digite sua idade" class="w3-input">
+            </h3>
+            <h3>Desenvolvedor
+                <input type="text" name="profissao" placeholder="Digite se é backend ou frontend" class="w3-input">
+            </h3>
+            <h3> Salário
+                <input type="number" name="salario" placeholder="Digite sua pretensão Salarial" class="w3-input">
+            </h3>
+            <h3>Experiência</h3>
+            <textarea name="experiencia" rows="10" cols="165" placeholder="Digite sua experiência" ></textarea>
+            <br>
+            <button type="submit" class="w3-button w3-light-gray">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
