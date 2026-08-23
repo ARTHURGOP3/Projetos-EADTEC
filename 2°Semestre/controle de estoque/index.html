@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <title>Gerenciamento de estoque</title> 
+        <style>
+            body{ 
+                text-align: center;
+            }
+            td, th 
+            {
+                padding: 8px 20px;
+            }
+
+        </style>
+    </head> 
+    <body> 
+        <div class="w3-container w3-gray">
+            <br> 
+            <h2 style="text-align: center;">Gerenciamento de estoque</h2> 
+            <br>
+        </div> 
+        <br>
+        <form class="w3container" method="post" action="index.php"> 
+            <h2 style="text-align: center;">Adicionar produto</h2>
+
+            <label class="w3-text-gray"><b>Nome</b></label> 
+                <input class="w3-input w3-border w3-lightgrey" style="text-align: center;" placeholder="digite o nome do produto" name="nomeproduto" type="text"> 
+           <label class="w3-text-gray"><b>Preço</b></label>
+            <input class="w3-input w3-border w3-lightgrey" style="text-align: center;" placeholder="digite o preço do produto" name="precoproduto" type="number">
+           <br>
+
+            <label class="w3-text-gray"><b>Estoque</b></label> 
+                <input class="w3-input w3-border w3-lightgrey" style="text-align: center;" placeholder="digite a quantidade em estoque do produto" name="nrestoque" type="number">  
+            <br> 
+            <button class="w3-btn w3-blue-grey">Adicionar</button> 
+        </form> 
+    </body> 
+</html> 
