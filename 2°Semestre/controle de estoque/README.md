@@ -1,6 +1,6 @@
 # Gerenciamento de Estoque — Exemplo em PHP
 
-Exemplo de aplicação desenvolvido para demonstrar o uso de **estruturas de repetição** e **funções** em PHP, conforme conteúdo estudado em sala.
+Exemplo de aplicação desenvolvido para demonstrar o uso de **estruturas de repetição** e **funções** em PHP, conforme conteúdo estudado na agenda03 de DS II
 
 ## 📋 Sobre o projeto
 
