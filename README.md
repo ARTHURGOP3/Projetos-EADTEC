@@ -17,3 +17,7 @@ Tecnologias que estou utilizando para os projetos:
    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
   <img align="center" alt="GitHub" height="210" width="210"
    src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg">
+  <img align="center" alt="CSharp" height="210" width="210"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg">
+  <img align="center" alt="DotNet MAUI" height="210" width="210"
+    src="https://cdn.worldvectorlogo.com/logos/dotnet.svg">
