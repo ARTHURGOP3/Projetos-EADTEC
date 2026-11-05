@@ -14,4 +14,5 @@ namespace JogoDaVelha
             return new Window(new AppShell());
         }
     }
+
 }
