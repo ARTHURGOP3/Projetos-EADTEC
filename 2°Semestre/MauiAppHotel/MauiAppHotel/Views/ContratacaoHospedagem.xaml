@@ -4,11 +4,11 @@
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="AliceBlue">
+             BackgroundColor="White">
     <VerticalStackLayout VerticalOptions="Center" Padding="10">
         <Label 
             Text="Calculo da Diária" FontFamily="GoogleSans" FontSize="53"
-            TextColor="Black"/>
+            TextColor="Aqua"/>
 
         <Border Padding="10">
             <VerticalStackLayout>
@@ -54,9 +54,10 @@
                 </Grid>
                 <Label Text="Escolha sua Suíte"
                        TextColor="Black"></Label>
-                <Picker x:Name="pick_quarto"
+                <Picker x:Name="pck_quarto"
                         Title="Selecione sua Acomodação"
-                        TextColor="Black"
+                        TextColor="Aqua"
+                        ItemDisplayBinding="{Binding Descricao}"
                         />
                         
                 <Border>
@@ -65,16 +66,18 @@
                         <HorizontalStackLayout>
                             <Label Text="Check-in:" TextColor="Black"/>
                             <DatePicker x:Name="dtpck_checkin"
-                                       Format="dd/mm/yyyy" TextColor="Black"/>
+                                       Format="dd/mm/yyyy" TextColor="Black"
+                                        DateSelected="dtpck_checkin_DateSelected"/>
                         </HorizontalStackLayout>
                         <HorizontalStackLayout>
                             <Label Text="Check-out:" TextColor="Black"/>
                             <DatePicker x:Name="dtpck_checkout"
-               Format="dd/mm/yyyy" TextColor="Black"/>
+                                Format="dd/mm/yyyy" TextColor="Black"
+                                        DateSelected="dtpck_checkout_DateSelected"/>
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Border>
-                <Button Text="Avançar" Background="Aqua"></Button>
+                <Button Text="Avançar" Background="Aqua" Clicked="Button_Clicked"></Button>
             </VerticalStackLayout>
         </Border>
     </VerticalStackLayout>

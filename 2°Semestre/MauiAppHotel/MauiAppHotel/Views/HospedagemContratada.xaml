@@ -1,16 +1,60 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppHotel.Views.NewPage1"
-             Title="NewPage1"
+             x:Class="MauiAppHotel.Views.HospedagemContratada"
+             Title="HospedagemContratada"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="AliceBlue"
-             >
-                
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             BackgroundColor="White">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+        <Label Text="Suíte Super Luxo"
+               TextColor="Aqua"
+               FontFamily="GoogleSans"
+               FontSize="50"
+               HorizontalTextAlignment="Center"/>
+
+        <Border Margin="10" Padding="10">
+            <StackLayout Orientation="Horizontal">
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Adultos: " />
+                    <Label Text="2" 
+                           TextColor="Black" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Crianças: " />
+                    <Label Text="1" 
+                           TextColor="Black" />
+                </HorizontalStackLayout>
+            </StackLayout>
+        </Border>
+
+        <Border Margin="10" Padding="10">
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" TextColor="Black"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" TextColor="Black"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" TextColor="Black"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="07/1/2026" TextColor="Black"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="06/12/2026" TextColor="Black"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="29" TextColor="Black"/>
+            </Grid>
+        </Border>
+
+        <Border Margin="10" Padding="10">
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="Valor Total: " TextColor="Black"/>
+                <Label Text="R$ 7250,00" TextColor="Black"/>
+            </HorizontalStackLayout>
+        </Border>
+
+
+        <Button Text="Voltar"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"    
+                TextColor="Aqua"/>
+
     </VerticalStackLayout>
 </ContentPage>
