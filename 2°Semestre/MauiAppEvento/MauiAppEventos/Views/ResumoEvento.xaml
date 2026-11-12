@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppEventos.Views.ResumoEvento"
+             Title="Resumo do evento">
+
+    <!-- O BindingContext (o Evento cadastrado) é recebido pelo construtor. -->
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="20">
+
+            <Label Text="Resumo do evento"
+                   FontSize="28"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+
+            <Border BackgroundColor="Purple" Padding="15">
+                <VerticalStackLayout Spacing="6">
+
+                    <Label Text="Nome do evento" TextColor="White" FontSize="14" HorizontalOptions="Center"/>
+                    <Label Text="{Binding Nome}"
+                           TextColor="White" FontSize="20" FontAttributes="Bold"
+                           HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Período" TextColor="White" FontSize="14" HorizontalOptions="Center" Margin="0,8,0,0"/>
+                    <Label TextColor="White" FontSize="20" FontAttributes="Bold"
+                           HorizontalOptions="Center" HorizontalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{Binding DataInicio, StringFormat='{0:dd/MM/yyyy}'}"/>
+                                <Span Text=" até "/>
+                                <Span Text="{Binding DataTermino, StringFormat='{0:dd/MM/yyyy}'}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Label Text="Duração" TextColor="White" FontSize="14" HorizontalOptions="Center" Margin="0,8,0,0"/>
+                    <Label Text="{Binding DuracaoFormatada}"
+                           TextColor="White" FontSize="20" FontAttributes="Bold"
+                           HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Local" TextColor="White" FontSize="14" HorizontalOptions="Center" Margin="0,8,0,0"/>
+                    <Label Text="{Binding Local}"
+                           TextColor="White" FontSize="20" FontAttributes="Bold"
+                           HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Número de participantes" TextColor="White" FontSize="14" HorizontalOptions="Center" Margin="0,8,0,0"/>
+                    <Label Text="{Binding NumeroParticipantes}"
+                           TextColor="White" FontSize="20" FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="Custo por participante" TextColor="White" FontSize="14" HorizontalOptions="Center" Margin="0,8,0,0"/>
+                    <Label Text="{Binding CustoPorParticipante, StringFormat='{0:C}'}"
+                           TextColor="White" FontSize="20" FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="Custo total do evento" TextColor="White" FontSize="14" HorizontalOptions="Center" Margin="0,14,0,0"/>
+                    <Label Text="{Binding CustoTotal, StringFormat='{0:C}'}"
+                           TextColor="White" FontSize="28" FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Text="Novo cadastro"
+                    Background="Purple"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="OnVoltarClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

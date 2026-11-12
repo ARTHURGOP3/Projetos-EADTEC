@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppEventos.Views.CadastroEvento"
+             Title="Cadastro de Eventos">
+
+    <!-- O BindingContext (um objeto Evento) é definido no code-behind. -->
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="20">
+
+            <Label Text="Cadastro de Eventos"
+                   FontSize="28"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+
+            <Border BackgroundColor="Purple" Padding="15">
+                <VerticalStackLayout Spacing="12">
+
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Nome do evento" TextColor="White" FontSize="16"/>
+                        <Entry Placeholder="Ex.: Aniversário da Ana"
+                               PlaceholderColor="LightGray"
+                               TextColor="White"
+                               Text="{Binding Nome}"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Data de início" TextColor="White" FontSize="16"/>
+                        <DatePicker Format="dd/MM/yyyy"
+                                    TextColor="White"
+                                    Date="{Binding DataInicio}"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Data de término" TextColor="White" FontSize="16"/>
+                        <DatePicker Format="dd/MM/yyyy"
+                                    TextColor="White"
+                                    Date="{Binding DataTermino}"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Número de participantes" TextColor="White" FontSize="16"/>
+                        <Entry Keyboard="Numeric"
+                               Placeholder="Ex.: 30"
+                               PlaceholderColor="LightGray"
+                               TextColor="White"
+                               Text="{Binding NumeroParticipantes}"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Local do evento" TextColor="White" FontSize="16"/>
+                        <Entry Placeholder="Ex.: Salão de Festas"
+                               PlaceholderColor="LightGray"
+                               TextColor="White"
+                               Text="{Binding Local}"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Custo por participante (R$)" TextColor="White" FontSize="16"/>
+                        <Entry Keyboard="Numeric"
+                               Placeholder="Ex.: 40,00"
+                               PlaceholderColor="LightGray"
+                               TextColor="White"
+                               Text="{Binding CustoPorParticipante}"/>
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Pré-visualização dos valores calculados pela model, atualizada em tempo real -->
+            <Border BackgroundColor="Transparent" Stroke="Purple" StrokeThickness="2" Padding="15">
+                <VerticalStackLayout Spacing="4">
+                    <Label Text="{Binding DuracaoFormatada, StringFormat='Duração: {0}'}" FontSize="16"/>
+                    <Label Text="{Binding CustoTotal, StringFormat='Custo total: {0:C}'}"
+                           FontSize="18"
+                           FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Text="Concluir cadastro"
+                    Background="Purple"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="OnConcluirClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
